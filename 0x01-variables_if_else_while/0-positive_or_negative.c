@@ -1,9 +1,11 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
-
-/* betty style doc for function main goes there */
+/**
+ * main - Entry point
+ * Description: print the status of n, zero, positive or negative
+ * Return: Alsways 0(Success)
+ */
 int main(void)
 {
 	int n;
@@ -11,15 +13,14 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	if (n > 0){
-
+	if (n > 0)
 		printf("%i is positive\n", n);
-	}
-	else if (n == 0){
+	
+	else if (n == 0)
 		printf("%i is zero\n", n );
-	}
-	else{
+	
+	else
 		printf("%i is negative\n", n);
-	}
+	
 	return (0);
 }
